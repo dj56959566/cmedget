@@ -4,13 +4,13 @@ permissions:
   contents: write
 
 on:
-  #schedule:
-    - cron: "0 0 * * *" # every day
+  schedule:
+    #- cron: "0 0 * * *" # every day
   workflow_dispatch:
 
 jobs:
-  #sync_latest_from_upstream:
-    name: Sync latest commits from upstream repo
+  sync_latest_from_upstream:
+   # name: Sync latest commits from upstream repo
     runs-on: ubuntu-latest
     #if: ${{ github.event.repository.fork }}
 
